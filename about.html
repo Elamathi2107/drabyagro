@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+<link rel="stylesheet" href="index.html">
+  <title>About Us - Coco Peat</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f7fd;
+    }
+    .main_about{
+    padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container_about {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-section {
+      flex: 2;
+      padding: 40px;
+    }
+
+    .text-section h1, .text-section h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .text-section p {
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .image-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .image-section img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container_about {
+        flex-direction: column;
+      }
+
+      .text-section, .image-section {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .image-section img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation Menu -->
+<nav class="navbar">
+    <img class="logo" src="image/logo.png" alt="Logo">
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#products">Products<i class="fas fa-caret-down"></i></a>
+    
+    <ul class="dropdown">
+        <li><a href="cocoblack.html">cocopeat Blocks</a></li>
+        <li><a href="growbag.html">Grow Bags</a></li>
+        <li><a href="fiber.html">Coir Fiber</a></li>
+        <li><a href="coiryarn.html">Coir Yarn</a></li>
+    </ul>
+    </li>
+    <li><a href="index.html#gallary">Gallery</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/+919791492773" class="whatsapp-icon" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="hamburger">
+    <i class="fas fa-bars"></i>
+    </div>
+    </nav>
+    
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay"></div>
+    
+    <script>
+    // JavaScript for the responsive sidebar toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+    
+    function toggleSidebar() {
+    navLinks.classList.toggle('active');
+    sidebarOverlay.classList.toggle('active');
+    }
+    
+    hamburger.addEventListener('click', toggleSidebar);
+    sidebarOverlay.addEventListener('click', toggleSidebar);
+    </script>
+    
+    
+<div class="main_about">
+  <div class="container_about">
+    <!-- Left Side: Text Content -->
+    <div class="text-section">
+      <h1>About Us</h1>
+      <p>Welcome to Draby Agro, your go-to partner for high-quality, sustainable coco peat products. Established with a commitment to supporting eco-friendly agriculture and gardening, we specialize in providing premium coco peat for both large-scale farms and home growers alike. Coco peat, derived from coconut husks, is a natural byproduct known for its unique ability to retain water, improve soil aeration, and deliver essential nutrients to plants—all while being a renewable and biodegradable resource.</p>
+
+      <h2>Our Journey</h2>
+      <p>Our journey began with a vision: to promote sustainable agriculture through innovative, natural products. Recognizing the growing need for eco-conscious soil alternatives, we focused on developing coco peat products that enable efficient, productive, and earth-friendly growing practices. Our team is dedicated to understanding and supporting the needs of farmers, gardeners, and horticultural enthusiasts in maximizing plant health and crop yield.</p>
+
+      <h2>What We Offer</h2>
+      <p><strong>Coco Peat Blocks:</strong> Easy-to-handle, compact products that expand when hydrated, ideal for retaining moisture and fostering strong root development.</p>
+      <p><strong>Coco Fiber:</strong>A natural mulch from coconut husks, coco fiber helps retain moisture, reduce weeds, and improve soil aeration, making it ideal for sustainable landscaping.</p>
+      <p><strong> Coir Yarn:</strong> Crafted from durable coconut fibers, coir yarn is perfect for supporting plants, making garden ropes, and various handicrafts, with natural resistance to mold.</p>
+      <p><strong> Coir Grow Bags:</strong> Ready-to-use and eco-friendly, coir grow bags offer a moisture-retentive, aerated growing medium, perfect for hydroponics, greenhouse plants, and container gardening.</p>
+      <h2>Why Choose Coco Peat?</h2>
+      <p><strong>Water Retention:</strong> Coco peat retains up to 10 times its weight in water, keeping your plants hydrated for longer and reducing watering frequency.</p>
+      <p><strong>Root Health:</strong> With its natural aeration properties, coco peat provides roots with the ideal balance of moisture and airflow, promoting stronger growth and better nutrient uptake.</p>
+      <p><strong>Eco-Friendly:</strong> As a renewable, biodegradable resource, coco peat is gentle on the planet, reducing reliance on non-renewable resources like peat moss.</p>
+
+      <h2>Our Commitment to Quality</h2>
+      <p>We are dedicated to delivering the highest-quality coco peat on the market. Every batch undergoes rigorous testing to ensure it meets our standards for consistency, purity, and performance. By sourcing responsibly and focusing on sustainable practices, we make sure that our products are not only good for your plants but also for the environment.</p>
+
+      <h2>Sustainability at Our Core</h2>
+      <p>Sustainability is the heart of our mission. By transforming coconut husk byproducts into a powerful growing medium, we contribute to reducing waste and support regenerative practices that protect our planet. Each product we create is a step towards greener, more sustainable agriculture.</p>
+
+      <h2>Customer-Centric Approach</h2>
+      <p>We understand that every grower has unique needs, and we are here to support you every step of the way. Our knowledgeable team is available to provide guidance on using coco peat, answer questions, and help you make the most of your gardening or farming experience.</p>
+
+      <h2>Join Us in Growing Greener</h2>
+      <p>Whether you’re an agricultural professional or a passionate home gardener, we invite you to join us in promoting sustainable practices that protect our natural resources and support thriving plant growth. At draby agro, we’re more than just a coco peat supplier—we’re your partner in growing greener.</p>
+    </div>
+
+    <!-- Right Side: Image Section -->
+    <div class="image-section">
+      <img src="image/coco1.jfif" alt="Coco Peat Product 1">
+      <img src="image/th.jpg" alt="Coco Peat Product 2">
+      <img src="image/coco3.jpg" alt="Coco Peat Product 3">
+      <img src="image/th.jpeg" alt="Coco Peat Product 3">
+    </div>
+  </div>
+</div>
+<footer>
+    <div class="footer-middle">
+    Get connected with us!
+    </div>
+    
+    <!-- Bottom Section: Company Info and Links -->
+    <div class="footer-bottom">
+    <!-- Column 1: Company Name -->
+    <div class="footer-column">
+    <h4>COMPANY NAME</h4>
+    <p>DREAM HILL TECHNOLOGY</p>
+    </div>
+    
+    <!-- Column 2: Products -->
+    <div class="footer-column">
+    <h4>PRODUCTS</h4>
+    <ul>
+     <li><a href="cocoblack.html">Coir Blocks</a></li>
+    <li><a href="growbag.html">Grow Bags</a></li>
+    <li><a href="fiber.html">Coir Fiber</a></li>
+    <li><a href="coiryarn.html">Coir Yarn</a></li>
+    </ul>
+    </div>
+    <div class="footer-column">
+    <h4>QUICK LINKS</h4>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#products">Product</a>
+    </li>
+    <li><a href="index.html#gallary">Gallery</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    </div>
+    
+    <!-- Column 4: Contact -->
+    <div class="footer-column">
+    <h4>CONTACT</h4>
+    <ul>
+    <li>Trichy</li>
+    <li>+919791492773</li>
+    <li>   +918072455447</li>
+        <li>+919342737395</li>
+        <li>www.darbyagro.com</li>
+    </ul>
+    </div>
+    </div>
+     <!-- Copyright Section -->
+     <div class="footer-copyright">
+        © 2024 Darby. All rights reserved.
+        </div>
+   </footer>
+
+</body>
+</html>
+about.html
+Displaying about.html.

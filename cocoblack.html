@@ -1,0 +1,479 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <title>Draby Agro Coco Peat Block</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Container styling */
+    .container_B {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header */
+    .header {
+        background-color: #62ae2f;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    /* Content styling */
+    .content {
+        display: flex;
+        flex-wrap: wrap; /* Ensure items wrap as needed */
+    justify-content: center; /* Center align items */
+    gap: 20px;
+    }
+
+    .content-text {
+        flex: 1;
+    min-width: 250px;
+    max-width: 600px; /* Set a maximum width */
+    line-height: 1.6;
+    font-size: 17px;
+    margin: 0 auto; /* Center the text */
+    padding: 0 10px; 
+    }
+
+    .content-image {
+        max-width: 550px;
+        flex: 1;
+    }
+
+    .content-image img:hover {
+        transform: translateY(-12px);
+        transition: 0.8s;
+    }
+
+
+
+    /* Brochure section */
+
+    .containers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .brochure {
+        flex: 1;
+        min-width: 250px;
+        margin-top: 19rem;
+    }
+
+    .brochure-section {
+        background-image: url(image/bg.jpg);
+        /* Light brown color */
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        /* Space above the brochure */
+        height: 80%;
+    }
+
+    .brochure-section p {
+        margin-bottom: 20px;
+        font-size: 1.1em;
+        color: white;
+    }
+
+    .download-btn {
+        background-color:#04AA6D;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .download-btn:hover {
+        background-color: #3a6e46;
+        /* Darker shade for hover effect */
+    }
+
+    /* Info section */
+    .info {
+        margin-top: 20px;
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #25462d;
+        margin-left: 20px;
+    }
+
+    /* Table */
+    .Specification {
+        font-size: 40px;
+    }
+
+    /* Base Styles for the Table and Brochure Section */
+.table-container {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%; /* Set to 100% for better alignment */
+    margin-top: 0; /* Space above the table */
+}
+
+.table-container td, .table-container th {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.table-container tr:nth-child(even) { background-color: #f2f2f2; }
+.table-container tr:hover { background-color: #ddd; }
+
+.table-container th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #62ae2f;
+    color: white;
+}
+
+.brochure {
+    flex: 1;
+    min-width: 250px;
+    margin-top: 0; /* Adjusted margin */
+}
+
+.brochure-section {
+    background-image: url(image/bg.jpg); 
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0; /* Adjusted margin */
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container_B {
+        max-width: 100%;
+    }
+    .content-text {
+        max-width: 100%; /* Full width on small screens */
+    }
+    .content {
+        flex-direction: column;
+        gap: 10px; /* Reduce gap on mobile */
+    }
+    .table-container, .brochure-section {
+        margin-top: 20px; /* Reduced margin for better alignment */
+        width: 100%; /* Full width for better alignment */
+    }
+}
+
+@media (max-width: 480px) {
+    .container_B {
+        width: 170%;
+    }
+    .content-text {
+        max-width: 100%; /* Full width on small screens */
+    }
+    .content {
+        flex-direction: column;
+    }
+    .table-container, .brochure-section {
+        margin-top: 10px; /* Reduced margin for a cleaner mobile view */
+        width: 100%;
+    }
+}
+
+
+    /* Footer Top Section */
+    .footer-middle {
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Footer Bottom Section */
+    .footer-bottom {
+        background-color: #212121;
+        color: white;
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .footer-column {
+        width: 200px;
+        margin: 10px;
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #FFFFFF;
+    }
+
+    .footer-column p,
+    .footer-column ul {
+        font-size: 14px;
+        color: #B0B0B0;
+    }
+
+    .footer-column ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+        color: #B0B0B0;
+        text-decoration: none;
+    }
+
+    .footer-column ul li a:hover {
+        color: #FFFFFF;
+    }
+
+    /* Footer Bottom Copyright */
+    .footer-copyright {
+        background-color: #111;
+        text-align: center;
+        color: #888;
+        padding: 10px;
+        font-size: 13px;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <img class="logo" src="image/logo.png" alt="Logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#products">Products<i class="fas fa-caret-down"></i></a>
+
+                <ul class="dropdown">
+                    <li><a href="cocoblack.html">Coir Blocks</a></li>
+                    <li><a href="growbag.html">Grow Bags</a></li>
+                    <li><a href="fiber.html">Coir Fiber</a></li>
+                    <li><a href="coiryarn.html">Coir Yarn</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#gallary">Gallery</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="https://wa.me/your-number" class="whatsapp-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay"></div>
+
+    <script>
+        // JavaScript for the responsive sidebar toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const sidebarOverlay = document.querySelector('.sidebar-overlay');
+
+        function toggleSidebar() {
+            navLinks.classList.toggle('active');
+            sidebarOverlay.classList.toggle('active');
+        }
+
+        hamburger.addEventListener('click', toggleSidebar);
+        sidebarOverlay.addEventListener('click', toggleSidebar);
+    </script>
+
+
+
+    <!-- Main Content -->
+    <div class="container_B">
+        <div class="header">Coco Peat Block</div>
+        <div class="content">
+            <div class="content-text">
+                <p>Made from 100% natural coconut husk, these blocks expand up to 75 liters when hydrated, providing
+                    excellent moisture retention and aeration for healthy plant growth. Coco peat is ideal for a variety
+                    of gardening applications, from potting mixes and seed starting to hydroponics. It improves soil
+                    structure by enhancing water retention and drainage, making it a sustainable and eco-friendly choice
+                    for gardeners. Available in 5 kg blocks, our coco peat is easy to use and ideal for both indoor and
+                    outdoor plants. Place your order today and give your plants the foundation they deserve!</p>
+
+                <div class="info">
+                    <p class="benifits"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M58.79 439.13A16 16 0 0 1 48 424c0-73.1 14.68-131.56 43.65-173.77c35-51 90.21-78.46 164.35-81.87V88a16 16 0 0 1 27.05-11.57l176 168a16 16 0 0 1 0 23.14l-176 168A16 16 0 0 1 256 424v-79.77c-45 1.36-79 8.65-106.07 22.64c-29.25 15.12-50.46 37.71-73.32 67a16 16 0 0 1-17.82 5.28Z" />
+                        </svg>Made from natural coconut husk, a renewable resource</p>
+                    <p class="benifits"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M58.79 439.13A16 16 0 0 1 48 424c0-73.1 14.68-131.56 43.65-173.77c35-51 90.21-78.46 164.35-81.87V88a16 16 0 0 1 27.05-11.57l176 168a16 16 0 0 1 0 23.14l-176 168A16 16 0 0 1 256 424v-79.77c-45 1.36-79 8.65-106.07 22.64c-29.25 15.12-50.46 37.71-73.32 67a16 16 0 0 1-17.82 5.28Z" />
+                        </svg>Improved Soil Structure: Enhances soil aeration, water retention, and drainage</p>
+                    <p class="benifits"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M58.79 439.13A16 16 0 0 1 48 424c0-73.1 14.68-131.56 43.65-173.77c35-51 90.21-78.46 164.35-81.87V88a16 16 0 0 1 27.05-11.57l176 168a16 16 0 0 1 0 23.14l-176 168A16 16 0 0 1 256 424v-79.77c-45 1.36-79 8.65-106.07 22.64c-29.25 15.12-50.46 37.71-73.32 67a16 16 0 0 1-17.82 5.28Z" />
+                        </svg>Nutrient-Rich Base: Perfect for a variety of plants, from vegetables to flowers</p>
+                </div>
+            </div>
+            <div class="content-image">
+                <img src="image/coco2.jpeg" alt="Grow Bag Image">
+            </div>
+        </div>
+        <div class="containers">
+            <div class="table-container">
+                <h2>Specification</h2>
+                <table>
+                    <tr>
+                        <th>Product Description</th>
+                        <th>Low EC / Washed</th>
+                        <th>High EC / Unwashed</th>
+                    </tr>
+                    <tr>
+                        <td>Block Size</td>
+                        <td>30 x 30 x 12 +/- 1cm</td>
+                        <td>30 x 30 x 12 +/- 1cm</td>
+                    </tr>
+                    <tr>
+                        <td>EC Level</td>
+                        <td>Below 0.5ms/cm</td>
+                        <td>Below 2.5ms/cm</td>
+                    </tr>
+                    <tr>
+                        <td>pH level</td>
+                        <td>5.8 – 6.8</td>
+                        <td>5.8 – 7</td>
+                    </tr>
+                    <tr>
+                        <td>Mesh</td>
+                        <td>6 mm</td>
+                        <td>6 mm</td>
+                    </tr>
+                    <tr>
+                        <td>Compression ratio</td>
+                        <td>5:1</td>
+                        <td>5:1</td>
+                    </tr>
+                    <tr>
+                        <td>Expansion volume</td>
+                        <td>15 ltrs per kg</td>
+                        <td>13-14 liters per kg</td>
+                    </tr>
+                    <tr>
+                        <td>Moisture below</td>
+                        <td>12-15 %</td>
+                        <td>15 %</td>
+                    </tr>
+                    <tr>
+                        <td>Impurities</td>
+                        <td>3 %</td>
+                        <td>3 %</td>
+                    </tr>
+                    <tr>
+                        <td>Fiber</td>
+                        <td>3 %</td>
+                        <td>5 %</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="brochure">
+                <div class="brochure-section">
+                    <p>Download our e-Brochure to explore more about our products and services in detail. Stay informed
+                        and make the right choice for your needs!</p>
+                    <a href="Brochure of cocopeat.pdf" download class="download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-middle">
+            Get connected with us!
+        </div>
+
+        <!-- Bottom Section: Company Info and Links -->
+        <div class="footer-bottom">
+            <!-- Column 1: Company Name -->
+            <div class="footer-column">
+                <h4>COMPANY NAME</h4>
+                <p>DREAM HILL TECHNOLOGY</p>
+            </div>
+
+            <!-- Column 2: Products -->
+            <div class="footer-column">
+                <h4>PRODUCTS</h4>
+                <ul>
+                    <li><a href="cocoblack.html">Coir Blocks</a></li>
+                    <li><a href="growbag.html">Grow Bags</a></li>
+                    <li><a href="fiber.html">Coir Fiber</a></li>
+                    <li><a href="coiryarn.html">Coir Yarn</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Product</a>
+                    </li>
+                    <li><a href="index.html#gallary">Gallery</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact -->
+            <div class="footer-column">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li>Trichy</li>
+                    <li>+919791492773</li>
+                    <li> +918072455447</li>
+                    <li>+919342737395</li>
+                    <li>www.darbyagro.com</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+            © 2024 Darby. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

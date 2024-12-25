@@ -1,0 +1,417 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.html">
+
+<title>Draby AgroCoco Peat Grow Bag</title>
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styling */
+        .container_B {
+            max-width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+    background-color: #62ae2f;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.8em; /* Slightly smaller font */
+}
+
+/* Content styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+      color: #333;
+      font-size: 1em;
+
+}
+
+.content-text {
+    margin: 1em 0;
+      line-height: 1.6;
+
+}
+        .content-image {
+            text-align: center;
+      padding: 15px;
+    }
+
+    .content-image  img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+
+      
+        .content-image img:hover {
+    transform: translateY(-12px);
+    transition: 0.8s;
+}
+        
+
+        /* Info section */
+        .info {
+            text-align: center;
+      font-size: 0.9em;
+      color: #555;
+      padding: 15px;
+    }
+
+    .info p {
+      margin: 5px 0;
+    }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        font-size: 5vw; /* Larger font size for mobile screens */
+    }
+
+    .content-text {
+        font-size: 1em; /* Slightly smaller on tablets */
+    }
+
+    .info {
+        font-size: 0.9em;
+    }
+
+    .table div {
+        font-size: 0.9em;
+    }
+
+    .footer-column h4 {
+        font-size: 1.1em;
+    }
+
+    .footer-column p, .footer-column ul {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 6vw; /* Larger font size for smaller screens */
+    }
+    .content {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+
+      .info {
+        font-size: 0.85em;
+        padding: 10px;
+      }
+    }
+
+    .content-text {
+        font-size: 0.9em; /* Smaller font for mobile devices */
+    }
+
+    .table div {
+        font-size: 0.85em;
+    }
+
+    .footer-column h4 {
+        font-size: 1em;
+    }
+
+    .footer-column p, .footer-column ul {
+        font-size: 0.8em;
+    }
+
+        /* Table */
+        .Specification{
+            font-size: 40px;
+        }
+        .containers{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .table {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 0px;
+        }
+
+        .table div {
+            background-color: #e8f0e8;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            width: 100%;
+        }
+   
+        /* Footer image */
+        .footer-image {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .footer-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Brochure section */
+       .brochure{
+        flex: 1;
+            min-width: 250px;
+            margin-top: 7rem;
+       }
+        .brochure-section {
+            background-image: url(image/bg.jpg); /* Light brown color */
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px; /* Space above the brochure */
+            height: 80%;
+        }
+        .brochure-section p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color:white;
+        }
+
+        .download-btn {
+            background-color:#04AA6D;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .download-btn:hover {
+            background-color: #3a6e46; /* Darker shade for hover effect */
+        }
+       /* Footer Top Section */
+.footer-middle {
+    background-color:green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #212121;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-column {
+    width: 200px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.footer-column p, .footer-column ul {
+    font-size: 14px;
+    color: #B0B0B0;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #B0B0B0;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #FFFFFF;
+}
+
+/* Footer Bottom Copyright */
+.footer-copyright {
+    background-color: #111;
+    text-align: center;
+    color: #888;
+    padding: 10px;
+    font-size: 13px;
+}
+    </style>
+</head>
+<body>
+<!-- Navigation Menu -->
+<nav class="navbar">
+    <img class="logo" src="image/logo.png" alt="Logo">
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#products">Products<i class="fas fa-caret-down"></i></a>
+    
+    <ul class="dropdown">
+        <li><a href="cocoblack.html">Coir Blocks</a></li>
+        <li><a href="growbag.html">Grow Bags</a></li>
+        <li><a href="fiber.html">Coir Fiber</a></li>
+        <li><a href="coiryarn.html">Coir Yarn</a></li>
+    </ul>
+    </li>
+    <li><a href="index.html#gallary">Gallery</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/your-number" class="whatsapp-icon" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="hamburger">
+    <i class="fas fa-bars"></i>
+    </div>
+    </nav>
+    
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay"></div>
+    
+    <script>
+    // JavaScript for the responsive sidebar toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+    
+    function toggleSidebar() {
+    navLinks.classList.toggle('active');
+    sidebarOverlay.classList.toggle('active');
+    }
+    
+    hamburger.addEventListener('click', toggleSidebar);
+    sidebarOverlay.addEventListener('click', toggleSidebar);
+    </script>
+    
+    
+<!-- Main Content -->
+<div class="container_B">
+    <div class="header">Coco Peat Grow Bags</div>
+
+    <div class="content">
+        <div class="content-text">
+            <p>Planet Coco's grow bags are the perfect medium for cultivating cut flowers. Whether you're growing roses, gerberas, or other florals, these grow bags provide the ideal mix of coco peat and coco chips to ensure proper drainage and aeration. Designed to meet the specific needs of the cut flower industry, Planet Coco grow bags help in producing vibrant, long-lasting blooms.</p>
+            <div class="content-image">
+                <img src="image/grow bags.jpg" alt="Grow Bag Image">
+            </div>
+            <div class="info">
+                <p>100 x 20 x 20 cm grow bags are available in 30% coco pith & 70 % coco husk ratio or 70% coco pith & 30 % coco husk ratio.</p>
+                <p>Our grow bags have a natural pH of 5.5 to 6<br>
+                Moisture Level Below 15<br>
+                UV stabilized Bags (12 to 48 Months) for optimum lifespan</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="containers">
+    <div class="table">
+        <div>Grow bag slab</div>
+        <div>100x15x15CM</div>
+        <div>100x18x18CM</div>
+        <div>100x20x20CM</div>
+        <div>HEIGHT 8CM TO 20CM AS PER CUSTOMER REQUEST</div>
+    </div>
+    <div class="brochure">
+        <div class="brochure-section">
+            <p>Download our e-Brochure to explore more about our products and services in detail. Stay informed and make the right choice for your needs!</p>
+            <a href="Brochure of cocopeat.pdf" download class="download-btn">Download</a>
+        </div>
+        </div>
+    </div>
+    <div class="footer-image">
+        <img src="image/growbags2.jpg" alt="Footer Image">
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-middle">
+    Get connected with us!
+    </div>
+    
+    <!-- Bottom Section: Company Info and Links -->
+    <div class="footer-bottom">
+    <!-- Column 1: Company Name -->
+    <div class="footer-column">
+    <h4>COMPANY NAME</h4>
+    <p>DREAM HILL TECHNOLOGY</p>
+    </div>
+    
+    <!-- Column 2: Products -->
+    <div class="footer-column">
+    <h4>PRODUCTS</h4>
+    <ul>
+     <li><a href="cocoblack.html">Coir Blocks</a></li>
+    <li><a href="growbag.html">Grow Bags</a></li>
+    <li><a href="fiber.html">Coir Fiber</a></li>
+    <li><a href="coiryarn.html">Coir Yarn</a></li>
+    </ul>
+    </div>
+    <div class="footer-column">
+    <h4>QUICK LINKS</h4>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#products">Product</a>
+    </li>
+    <li><a href="index.html#gallary">Gallery</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    </div>
+    
+    <!-- Column 4: Contact -->
+    <div class="footer-column">
+    <h4>CONTACT</h4>
+    <ul>
+    <li>Trichy</li>
+    <li>+919791492773</li>
+    <li>   +918072455447</li>
+        <li>+919342737395</li>
+        <li>www.darbyagro.com</li>
+    </ul>
+    </div>
+    </div>
+     <!-- Copyright Section -->
+     <div class="footer-copyright">
+        © 2024 Darby. All rights reserved.
+        </div>
+   </footer>
+</body>
+</html>

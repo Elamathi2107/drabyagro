@@ -1,0 +1,301 @@
+<!-- Column 3: Useful Links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Draby Agro</title>
+</head>
+
+<body>
+
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <img class="logo" src="image/logo.png" alt="Logo">
+    <ul class="nav-links">
+      <li><a href="#intro-a">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products<i class="fas fa-caret-down"></i></a>
+
+        <ul class="dropdown">
+          <li><a href="cocoblack.html">Coir Blocks</a></li>
+          <li><a href="growbag.html">Grow Bags</a></li>
+          <li><a href="fiber.html">Coir Fiber</a></li>
+          <li><a href="coiryarn.html">Coir Yarn</a></li>
+        </ul>
+      </li>
+      <li><a href="#gallary">Gallery</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/your-number" class="whatsapp-icon" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Sidebar Overlay for Mobile -->
+  <div class="sidebar-overlay"></div>
+
+  <script>
+    // JavaScript for the responsive sidebar toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+
+    function toggleSidebar() {
+      navLinks.classList.toggle('active');
+      sidebarOverlay.classList.toggle('active');
+    }
+
+    hamburger.addEventListener('click', toggleSidebar);
+    sidebarOverlay.addEventListener('click', toggleSidebar);
+  </script>
+  <!-- Intro Section -->
+  <section id="intro-a">
+
+    <div class="main-home">
+      <div class="inner-home">
+        <div class="left-content-home">
+          <h1>All In Good Products<br> DARBY AGRO</h1>
+          <p>Transforming Agriculture with Sustainable Coco Peat Solutions</p>
+          <p>Providing Organic Coco Peat Products for Greener and Healthier Crops</p>
+          <a href="https://wa.me/your-number" class="whatsapp-icon" target="_blank">
+          </a>
+          <button>connect</button>
+        </div>
+      </div>
+      <div class="inner-home">
+        <div class="home-img">
+          <img src="image/thd(3).jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    </div>
+</section>
+    <section id="about">
+      <div class="About" id="about">
+        <h1>About Us</h1>
+
+        <div class="main-about">
+
+          <div class="inner-about">
+            <div class="about-img">
+              <img src="image/th (3).jpeg" alt="">
+            </div>
+          </div>
+
+          <div class="inner-about">
+            <div class="right-content-about">
+              <h3>Welcome</h3>
+              <h2>All In Good products <br> coco peat</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam cum eligendi libero? Perspiciatis
+                alias minima quasi nesciunt explicabo omnis iste accusantium quos, error aperiam quibusdam.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam cum eligendi libero? Perspiciatis
+                alias minima quasi nesciunt explicabo omnis iste accusantium quos, error aperiam quibusdam.</p>
+
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <div class="container_P">
+        <h2 class="pro">Browse</h2>
+        <h2 class="subpro">Eco-Friendly Coco Solutions by Drabyargo</h2>
+        <div class="flex-container">
+          <div class="card">
+            <img src="image/block.jpeg" alt="Card 1 Image">
+            <div class="card__data">
+              <span class="card__description">Eco Frindly</span>
+              <h2 class="card__title">Coir Blocks</h2>
+              <a href="cocoblack.html" class="card__button">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="image/bags.jpeg" alt="Card 2 Image">
+            <div class="card__data">
+              <span class="card__description">Protable Grow</span>
+              <h2 class="card__title">Coir Grow Bags</h2>
+              </h2>
+              <a href="growbag.html" class="card__button">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="image/fiber.jpeg" alt="Card 3 Image">
+            <div class="card__data">
+              <span class="card__description">Soil Additive</span>
+              <h2 class="card__title">Coir Fiber</h2>
+              <a href="fiber.html" class="card__button">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="image/yarn2.jpeg" alt="Card 4 Image">
+            <div class="card__data">
+              <span class="card__description">Coir Rope</span>
+              <h2 class="card__title">Coir Yarn</h2>
+              <a href="coiryarn.html" class="card__button">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gallary">
+      <div class="full-img" id="box">
+        <imgsrc="images/coco1.jfif" id="fullimg" />
+
+        <span onclick="closeimg()">X</span>
+      </div>
+      <h2 class="pro">Awesome Gallery</h2>
+      <h2 class="subpro">Gallery Of Our Products</h2>
+      <div class="img-gallery">
+        <img src="image/coco1.jfif" onclick="openimg(this.src)" />
+        <img src="image/coco2.jfif" onclick="openimg(this.src)" />
+        <img src="image/coco4.jfif" onclick="openimg(this.src)" />
+        <img src="image/coco6.jpg" onclick="openimg(this.src)" />
+        <img src="image/coco3.jpg" onclick="openimg(this.src)" />
+        <img src="image/coco5.jpg" onclick="openimg(this.src)" />
+        <img src="image/coco7.jpg" onclick="openimg(this.src)" />
+        <img src="image/coco8.jfif" onclick="openimg(this.src)" />
+
+        <img src="image/yarn5.jfif" onclick="openimg(this.src)" />
+        <img src="image/yarn7.jfif" onclick="openimg(this.src)" />
+        <img src="image/yarn3.webp" onclick="openimg(this.src)" />
+
+        <img src="image/yarn7.jfif" onclick="openimg(this.src)" />
+
+        <img src="image/yarn1.jpg" onclick="openimg(this.src)" />
+        <img src="image/yarn2.jpg" onclick="openimg(this.src)" />
+        <img src="image/yarn4.jpg" onclick="openimg(this.src)" />
+      </div>
+    </section>
+    <section id="contact">
+      <div class="Contact">
+        <div class="contact_main">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Door No.16, 2nd Floor, Krishna Complex,
+                46 Jeevanantham Street,
+              </div>
+              <div class="text-two">Malayappa Nagar,
+                TanjoreMainRoad, Tiruchirappalli-620010
+              </div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+919791492773</div>
+              <div class="text-two">+918072455447</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">dreamhilltech@gmail.com</div>
+              <div class="text-two">drabiagro@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>If you have any enquiry from me or any types of quries related to OUR products, you can send me message
+              from here. It's my pleasure to help you.</p>
+            <form action="javascript:void(0);">
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <input type="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box message-box">
+                <input type="text" placeholder="Enter your quries" required>
+              </div>
+              <div class="button">
+                <input type="button" value="Send Now" onclick="sendToWhatsApp()">
+              </div>
+            </form>
+
+            <script>
+              function sendToWhatsApp() {
+                const name = document.querySelector('input[placeholder="Enter your name"]').value;
+                const email = document.querySelector('input[placeholder="Enter your email"]').value;
+                const queries = document.querySelector('input[placeholder="Enter your quries"]').value;
+
+                const message = `Hello, I am ${name}. My email is ${email}. My query: ${queries}`;
+                const whatsappNumber = "YOUR_WHATSAPP_NUMBER"; // Replace with the number you want to send to
+
+                const whatsappUrl = `https://wa.me/${8248995365}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-middle">
+        Get connected with us!
+      </div>
+
+      <!-- Bottom Section: Company Info and Links -->
+      <div class="footer-bottom">
+        <!-- Column 1: Company Name -->
+        <div class="footer-column">
+          <h4>COMPANY NAME</h4>
+          <p>DREAM HILL TECHNOLOGY</p>
+        </div>
+
+        <!-- Column 2: Products -->
+        <div class="footer-column">
+          <h4>PRODUCTS</h4>
+          <ul>
+            <li><a href="cocoblack.html">Coir Blocks</a></li>
+            <li><a href="growbag.html">Grow Bags</a></li>
+            <li><a href="fiber.html">Coir Fiber</a></li>
+            <li><a href="coiryarn.html">Coir Yarn</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#products">Product</a>
+            </li>
+            <li><a href="index.html#gallary">Gallery</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-column">
+          <h4>CONTACT</h4>
+          <ul>
+            <li>Trichy</li>
+            <li>+919791492773</li>
+            <li> +918072455447</li>
+            <li>+919342737395</li>
+            <li>www.darbyagro.com</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copyright Section -->
+      <div class="footer-copyright">
+        © 2024 Darby. All rights reserved.
+      </div>
+    </footer>
+</body>
+
+</html>
